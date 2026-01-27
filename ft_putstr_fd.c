@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 03:07:22 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/27 03:13:24 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/27 04:02:53 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,11 @@ void	ft_putstr_fd(char *s, int fd)
 		return ;
 	write(fd, s, ft_strlen(s));
 }
-
+/*
 int	main(void)
 {
 	ft_putstr_fd("hello ", 1);
 	ft_putstr_fd("erreur!", 2);
 	return (0);
 }
+*/
