@@ -1,0 +1,30 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/26 19:47:35 by marasolo          #+#    #+#             */
+/*   Updated: 2026/01/26 19:47:36 by marasolo         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+int	ft_isdigit(int c)
+{
+	if (48 <= c && c <= 57)
+		return (1);
+	else
+		return (0);
+}
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	printf("%d\n" ,isdigit(65));
+	return 0;
+}
+*/
