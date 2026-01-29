@@ -1,43 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/27 04:07:28 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/27 07:24:37 by marasolo         ###   ########.fr       */
+/*   Created: 2026/01/29 07:56:43 by marasolo          #+#    #+#             */
+/*   Updated: 2026/01/29 08:29:05 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	long int	nb;
+	t_list	*tmp;
 
-	nb = n;
-	if (nb < 0)
+	if (!lst || !del || !*lst)
+		return ;
+	while (*lst)
 	{
-		ft_putchar_fd('-', fd);
-		nb = -nb;
+		tmp = (*lst)->next;
+		ft_lstdelone(*lst, del);
+		*lst = tmp;
 	}
-	if (10 <= nb)
-	{
-		ft_putnbr_fd(nb / 10, fd);
-	}
-	ft_putchar_fd((nb % 10) + '0', fd);
+	*lst = NULL;
 }
-/*
-int	main(void)
-{
-	ft_putnbr_fd(-655, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(655, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(-2147483648, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(2147483647, 1);
-	return (0);
-}
-*/

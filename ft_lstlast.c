@@ -1,43 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/27 04:07:28 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/27 07:24:37 by marasolo         ###   ########.fr       */
+/*   Created: 2026/01/28 17:56:01 by marasolo          #+#    #+#             */
+/*   Updated: 2026/01/29 07:54:28 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+t_list	*ft_lstlast(t_list *lst)
 {
-	long int	nb;
-
-	nb = n;
-	if (nb < 0)
+	if (!lst)
+		return (NULL);
+	while (lst->next)
 	{
-		ft_putchar_fd('-', fd);
-		nb = -nb;
+		lst = lst->next;
 	}
-	if (10 <= nb)
-	{
-		ft_putnbr_fd(nb / 10, fd);
-	}
-	ft_putchar_fd((nb % 10) + '0', fd);
+	return (lst);
 }
 /*
-int	main(void)
+#include <stdio.h>
+
+int main(void)
 {
-	ft_putnbr_fd(-655, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(655, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(-2147483648, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(2147483647, 1);
+	t_list  *ma;
+	t_list  *last;
+
+	ma = ft_lstnew("two");
+	ft_lstadd_front(&ma, ft_lstnew("one"));
+	last = ft_lstlast(ma);
+	
+	printf("%s\n", (char *)last->content);
 	return (0);
 }
 */

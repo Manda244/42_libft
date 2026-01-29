@@ -1,43 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/27 04:07:28 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/27 07:24:37 by marasolo         ###   ########.fr       */
+/*   Created: 2026/01/29 08:50:06 by marasolo          #+#    #+#             */
+/*   Updated: 2026/01/29 09:29:50 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	long int	nb;
+	t_list	*new_list;
+	t_list	*new_noeud;
+	void	*new_content;
 
-	nb = n;
-	if (nb < 0)
+	if (!lst || !f || !del)
+		return (NULL);
+	new_list = NULL;
+	while (lst)
 	{
-		ft_putchar_fd('-', fd);
-		nb = -nb;
+		new_content = f(lst->content);
+		new_noeud = ft_lstnew(new_content);
+		if (!new_noeud)
+		{
+			ft_lstclear(&new_list, del);
+			return (NULL);
+		}
+		ft_lstadd_back(&new_list, new_noeud);
+		lst = lst->next;
 	}
-	if (10 <= nb)
-	{
-		ft_putnbr_fd(nb / 10, fd);
-	}
-	ft_putchar_fd((nb % 10) + '0', fd);
+	return (new_list);
 }
-/*
-int	main(void)
-{
-	ft_putnbr_fd(-655, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(655, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(-2147483648, 1);
-	ft_putchar_fd('\n', 1);
-	ft_putnbr_fd(2147483647, 1);
-	return (0);
-}
-*/

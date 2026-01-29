@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/27 03:38:26 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/27 04:00:35 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/27 05:33:47 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,11 @@ void	ft_putendl_fd(char *s, int fd)
 	ft_putstr_fd(s, fd);
 	ft_putchar_fd('\n', fd);
 }
-
+/*
 int	main(void)
 {
 	ft_putendl_fd("ligne 1", 1);
 	ft_putendl_fd("ligne 2", 2);
 	return (0);
 }
+*/
