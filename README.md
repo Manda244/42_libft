@@ -136,3 +136,4 @@ typedef struct s_list
 * **Documentation:** Used AI to guide me to generate this `README.md` file, specifically to format the function tables and ensure all prototypes matched the header file.
 * **Understanding:** Used AI to clarify the behavior of undefined behaviors in original libc functions (e.g., `memmove` vs `memcpy` overlap handling).
 # manda
+# manda
