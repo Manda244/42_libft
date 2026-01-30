@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:49:33 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:49:34 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:02:27 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,21 +37,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	str[i] = '\0';
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*str = "bonjour tous les mondes";
-	char	*sub;
-
-	printf("%s\n" , str);
-	
-	sub = ft_substr(str, 8, 4);
-	
-	printf("%s\n" , sub);
-
-	free(sub);
-	return 0;
-}
-*/

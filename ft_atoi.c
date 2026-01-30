@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:46:36 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:46:37 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:57:30 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,14 +34,3 @@ int	ft_atoi(const char *nptr)
 	}
 	return (i * y);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "---+--+1234ab567";
-
-	printf("%d ", ft_atoi(str));
-	return (0);
-}
-*/

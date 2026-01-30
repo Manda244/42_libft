@@ -137,3 +137,5 @@ typedef struct s_list
 * **Understanding:** Used AI to clarify the behavior of undefined behaviors in original libc functions (e.g., `memmove` vs `memcpy` overlap handling).
 # manda
 # manda
+# manda
+# manda

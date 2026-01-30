@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:49:43 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/29 08:49:50 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:51:25 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include <stdint.h>
 # include <stdio.h>
 
 int		ft_isalpha(int c);

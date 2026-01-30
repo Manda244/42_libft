@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/29 05:21:53 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/29 07:54:15 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:58:40 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,16 +28,3 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		last->next = new;
 	}
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	t_list	*ma = NULL;
-	
-	ft_lstadd_back(&ma, ft_lstnew("a"));
-	ft_lstadd_back(&ma, ft_lstnew("b"));
-	ft_lstadd_back(&ma, ft_lstnew("c"));
-	return (0);
-}
-*/

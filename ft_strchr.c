@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:48:39 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:48:40 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:00:58 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	s[] = "bonjour tout le monde";
-
-	printf("%s\n", ft_strchr(s, 't'));
-}
-*/

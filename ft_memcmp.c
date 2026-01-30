@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:47:55 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:47:56 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:59:27 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,15 +29,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int     main()
-{
-	char	s1[] = {1, 2, 3, 0, 5};
-	char    s2[] = {1, 2, 3, 0, 6};
-
-        printf("%d ", ft_memcmp(s1, s2, 4));
-        printf("%d ", ft_memcmp(s1, s2, 5));
-}
-*/

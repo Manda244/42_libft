@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:48:21 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:48:22 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:59:42 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,18 +39,3 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	str[] = "123456789";
-
-	printf("%s\n" , str);
-
-	ft_memmove(str + 2, str, 5);
-
-	printf("%s\n" , str);
-	return 0;
-}
-*/

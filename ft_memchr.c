@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:47:50 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:47:51 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:59:20 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,17 +25,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-
-int     main(void)
-{
-        char	str[] = {65, 66, 67, 68, 69, 70, 71};
-
-	char *ptr = ft_memchr(str, 122, 7);
-
-	printf("%s\n" , ptr);
-
-        return 0;
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:47:29 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:47:30 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:58:17 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_isascii(int c)
 	else
 		return (0);
 }
-/*
- #include <stdio.h>
-
-int	main(void)
-{
-	printf("%d\n" ,isascii(0));
-	return 0;
-}
-*/

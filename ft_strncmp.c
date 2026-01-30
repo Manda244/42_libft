@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:49:15 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:49:16 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:01:59 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,13 +25,3 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-
-int	main()
-{
-	printf("%d ", ft_strncmp("MANDA", "MANDA", 5));
-	printf("%d ", ft_strncmp("MANDA", "manda", 5));
-	printf("%d ", ft_strncmp("manda", "MANDA", 5));
-}
-*/

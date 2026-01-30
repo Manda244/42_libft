@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:49:05 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:49:06 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:01:39 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,15 +28,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "bye";
-	char	dst[] = "manda";
-
-	printf("%zu\n" , ft_strlcpy(dst, src, 2));
-	printf("%s\n" , dst);
-}
-*/
