@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:49:02 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:49:03 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:01:29 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,15 +31,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dl + i] = '\0';
 	return (dl + sl);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	src[] = "niaina";
-	char	dst[] = "manda";
-
-	printf("%zu\n" , ft_strlcat(dst, src, 12));
-	printf("%s\n" , dst);
-}
-*/

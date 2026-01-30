@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:48:34 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/28 16:04:14 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:00:39 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,21 +81,3 @@ char	**ft_split(char const *s, char c)
 	str[i] = NULL;
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	**res = ft_split("", ' ');
-	int	i = 0;
-
-	while(res[i])
-	{
-		printf("mot %d : %s\n" , i, res[i]);
-		free(res[i]);
-		i++;
-	}
-	free(res);
-	return 0;
-}
-*/	

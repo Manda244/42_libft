@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:47:35 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:47:36 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:16:32 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d\n" ,isdigit(65));
-	return 0;
-}
-*/

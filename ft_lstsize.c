@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/28 17:23:40 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/28 17:55:05 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:59:14 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	t_list	*ma = NULL;
-
-	ft_lstadd_front(&ma, ft_lstnew("1"));
-	ft_lstadd_front(&ma, ft_lstnew("2"));
-	ft_lstadd_front(&ma, ft_lstnew("3"));
-	printf("%d\n", ft_lstsize(ma));
-	return (0);
-}
-*/

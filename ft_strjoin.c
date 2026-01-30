@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:48:55 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:48:56 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:01:18 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,18 +38,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	*s1 = "hello ";
-	char	*s2 = "42 !";
-	char	*index;
-
-	index = ft_strjoin(s1, s2);
-	printf("%s\n" , index);
-	free(index);
-	return 0;	
-}
-*/

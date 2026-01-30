@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:47:22 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:47:23 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:13:41 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,3 @@ int	ft_isalpha(int c)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	printf("%d\n" , isalpha(65));
-	return 0;
-}
-*/

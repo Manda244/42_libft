@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:49:20 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:49:21 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:02:08 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,15 +33,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	char	big[] = "Utility functions from BSD systems";
-	char	little[] = "Utility";
-	char	*rs = ft_strnstr(big, little, 7);
-
-	printf("%s\n" , rs);
-}
-*/

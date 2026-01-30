@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:49:40 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:49:41 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 11:02:47 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,3 @@ int	ft_toupper(int c)
 	}
 	return (c);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	int	i = 98;
-
-	printf("%d\n" , i);
-	printf("%d\n" , ft_toupper(i));
-}
-*/

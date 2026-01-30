@@ -6,7 +6,7 @@
 /*   By: marasolo <marasolo@student.42antananari    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/26 19:47:08 by marasolo          #+#    #+#             */
-/*   Updated: 2026/01/26 19:51:50 by marasolo         ###   ########.fr       */
+/*   Updated: 2026/01/30 10:57:50 by marasolo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*index;
+	size_t	total;
 
-	if (size != 0 && nmemb > (SIZE_MAX / size))
+	total = nmemb * size;
+	if (size != 0 && nmemb > (total / size))
 		return (NULL);
 	index = malloc(nmemb * size);
 	if (!index)
@@ -24,26 +26,3 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(index, nmemb * size);
 	return (index);
 }
-/*
-#include <stdio.h>
-
-int	main(void)
-{
-	int	i = 0;
-	int	*ptr;
-
-	ptr = (int *)ft_calloc(5, sizeof(int));
-
-	if (!ptr)
-		return (1);
-
-	while (i < 5)
-	{
-		printf("ptr[%d] = %d\n" , i, ptr[i]);
-		i++;
-	}
-
-	free(ptr);
-	return 0;
-}
-*/
